@@ -1,0 +1,148 @@
+* {
+    display: block;
+    position: static;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    list-style: none;
+    background-color: #202020;
+    color: whitesmoke;
+}
+a {
+    text-decoration: none;
+}
+
+.stick {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+}
+
+#navbar {
+    display: grid;
+    grid: auto-flow / 50% 1fr 1fr 1fr;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+
+}
+
+#navbar li {
+    text-align: center;
+    border: whitesmoke solid 1px;
+    padding: 5px 8px;
+    margin: 0 1.5rem;
+}
+#logo {
+    font-family: "Montserrat-Medium" sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.content {
+    display: inline-flex;
+    width: 100%;
+}
+
+#banner {
+    position: static;
+    background-image: url("./images/raphael-schaller-zbUvPw1wUIw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+
+#banner p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    background-color: transparent;
+    color: #202020;
+    padding: 50px auto;
+    margin: 25% 0;
+}
+
+#location {
+    height: fit-content;
+    z-index: 8;
+}
+
+#locs {
+    display: grid;
+    grid-template-areas: "loc1 loc2"
+    "loc3 loc2"
+    "loc3 loc4";
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+#loc1 {
+    grid-area: loc1;
+    line-height: 2;
+    background-color: whitesmoke;
+    color: #202020;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    height: fit-content;
+}
+#loc2 {
+    grid-area: loc2;
+    line-height: 2;
+    background-color: whitesmoke;
+    color: #202020;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    height: fit-content;
+}
+#loc3 {
+    grid-area: loc3;
+    line-height: 2;
+    background-color: whitesmoke;
+    color: #202020;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    height: fit-content;
+}
+#loc4 {
+    grid-area: loc4;
+    line-height: 2;
+    background-color: whitesmoke;
+    color: #202020;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    height: fit-content;
+}
+
+#locs img {
+    width: 100%;
+    max-height: 100%;
+    margin: 1.5rem 0;
+}
+
+#about {
+    margin: 50px 35%;
+    text-align: center;
+}
+.content #opens {
+    text-align: center;
+    height: fit-content;
+
+}
+
+.content #contact {
+    display: inline-flex;
+}
+p{
+    padding-left: 5px;
+    margin: 0 2px;
+}
